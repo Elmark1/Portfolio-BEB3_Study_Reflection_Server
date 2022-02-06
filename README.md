@@ -4,7 +4,7 @@
 
 ### Request ###
 
-`GET http://beb03-study-reflection-server.herokuapp.com/`
+`GET https://beb03-study-reflection-server.herokuapp.com/`
 
 ### Response ###
 
@@ -18,18 +18,21 @@
 
 ### Request ###
 
-`GET http://beb03-study-reflection-server.herokuapp.com/posts`
+`GET https://beb03-study-reflection-server.herokuapp.com/posts`
 
 ### Response ###
 
 ```
 [
   {
-	_id: 61ffaa36ade23c1e45f2f7e3,
-	title: "TEST TITLE",
-	content: "TEST CONTENT",
-	writer: "TEST WRITER",
-	createdAt: 2022-02-06T10:57:43.283+00:00,
+	_id: 61ffd66cf2522073192c8d5b,
+	title: "This is sample data",
+	content:
+	  "# Sample data #
+	  - The content should follow markdown format
+	  - The con...",
+	writer: "Robin Kwon",
+	createdAt: 2022-02-06T13:55:28.931+00:00,
 	__v: 0
   },
   // Several posts
@@ -40,7 +43,7 @@
 
 ### Request ###
 
-`POST http://beb03-study-reflection-server.herokuapp.com/posts`
+`POST https://beb03-study-reflection-server.herokuapp.com/posts`
 
 Request Type: JSON
 
@@ -54,11 +57,14 @@ Request Type: JSON
 
 ```
 {
-  title: "TEST",
-  content: "THIS IS TEST CONTENT",
-  writer: "Robin HJ Kwon",
-  createdAt: "2022-02-06T10:57:43.283Z",
-  _id: "61ffb3dcade23c1e45f2f7e6",
+  _id: 61ffd66cf2522073192c8d5b,
+  title: "This is sample data",
+  content:
+    "# Sample data #
+    - The content should follow markdown format
+    - The con...",
+  writer: "Robin Kwon",
+  createdAt: 2022-02-06T13:55:28.931+00:00,
   __v: 0
 }
 ```
