@@ -15,6 +15,14 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.use('/posts', postsRoutes);
 
+app.get('/', (req, res) => {
+  try {
+	res.status(200).json({message: 'Welcome to BEB 03 Study Reflection API'});
+  } catch(error) {
+	res.status(400).json({message: error.message});
+  }
+});
+
 // Initialise environmental constant
 const CONNECTION_URI = process.env.CONNECTION_URI;
 const PORT = process.env.PORT || 4000;

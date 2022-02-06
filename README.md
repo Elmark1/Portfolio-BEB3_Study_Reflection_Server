@@ -1,5 +1,19 @@
 # BEB 03 Study Reflection Server API #
 
+## Get Welcome message ##
+
+### Request ###
+
+`GET http://beb03-study-reflection-server.herokuapp.com/`
+
+### Response ###
+
+```
+{
+  message: "Welcome to BEB 03 Study Reflection API"
+}
+```
+
 ## Get all posts ##
 
 ### Request ###
