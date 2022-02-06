@@ -8,7 +8,8 @@
 
 ### Response ###
 
-`[
+```
+[
   {
 	_id: 61ffaa36ade23c1e45f2f7e3,
 	title: "TEST TITLE",
@@ -18,7 +19,8 @@
 	__v: 0
   },
   // Several posts
-]`
+]
+```
 
 ## Create post ##
 
@@ -36,11 +38,13 @@ Request Type: JSON
 
 ### Response ###
 
-`{
+```
+{
   title: "TEST",
   content: "THIS IS TEST CONTENT",
   writer: "Robin HJ Kwon",
   createdAt: "2022-02-06T10:57:43.283Z",
   _id: "61ffb3dcade23c1e45f2f7e6",
   __v: 0
-}`
+}
+```
