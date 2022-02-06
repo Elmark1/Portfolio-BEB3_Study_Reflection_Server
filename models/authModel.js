@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const authSchema = mongoose.schema({
+const authSchema = mongoose.Schema({
   id: String,
   password: String
 });
